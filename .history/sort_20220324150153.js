@@ -2,7 +2,7 @@
 const unsortedArray = [];
 let i = 0;
 while (i < 5) {
-    unsortedArray[i] = parseInt(prompt("Please enter an integer."));
+    unsortedArray = parseInt(prompt("Please enter an integer."));
     i++;
 }
 // prettier-ignore

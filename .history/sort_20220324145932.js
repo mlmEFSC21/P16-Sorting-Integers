@@ -1,9 +1,7 @@
 //hardcoded array to create logic for the sort.
 const unsortedArray = [];
-let i = 0;
-while (i < 5) {
-    unsortedArray[i] = parseInt(prompt("Please enter an integer."));
-    i++;
+while (let i =0; i < 5; i++) {
+    unsortedArray = parseInt(prompt("Please enter an integer."))
 }
 // prettier-ignore
 document.getElementById("unsorted").innerText = 
