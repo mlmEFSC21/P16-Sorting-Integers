@@ -1,0 +1,21 @@
+:root {
+    --clr-background: #00ff8f;
+    --clr-primary: #00f0ff;
+    --clr-secondary: #00ff0f;
+}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: larger;
+}
+.mainHeader {
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

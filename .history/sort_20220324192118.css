@@ -63,10 +63,3 @@ td {
     background-color: var(--clr-secondary-T1);
     text-align: center;
 }
-.sortedTable th {
-    background-color: var(--clr-primary-T2);
-}
-.sortedTable td {
-    background-color: var(--clr-secondary-T2);
-    text-align: center;
-}

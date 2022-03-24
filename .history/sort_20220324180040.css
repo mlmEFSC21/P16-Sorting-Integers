@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: larger;
+}
+.mainHeader {
+    display: flex;
+    height: 15vh;
+}
+h1 {
+    align-self: center;
+}

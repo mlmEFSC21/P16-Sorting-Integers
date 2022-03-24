@@ -1,9 +1,9 @@
 :root {
     --clr-background: #00ff8f;
-    --clr-primary-T1: hsl(184, 100%, 50%);
-    --clr-primary-T2: hsl(184, 90%, 55%);
-    --clr-secondary-T1: hsl(124, 100%, 50%);
-    --clr-secondary-T2: hsl(124, 100%, 50%);
+    --clr-primary: hsl(184, 100%, 50%);
+    --clr-primary-light: hsl(184, 90%, 55%);
+    --clr-secondary: hsl(124, 100%, 50%);
+    --clr-secondary-light: hsl(90, 80%, 30%);
 }
 *,
 *::after,
@@ -14,7 +14,6 @@
 }
 body {
     font-size: 0.875;
-    text-shadow: 0.75px 0.75px 1px white;
     background-color: var(--clr-background);
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,23 +49,14 @@ thead {
     border-bottom: 2px solid black;
 }
 th {
+    background-color: var(--clr-primary-light);
+}
+td {
+    background-color: var(--clr-secondary-light);
+    text-align: center;
 }
 th,
 td {
     margin: 10px 15px;
     padding: 10px 15px;
-}
-.unsortedTable th {
-    background-color: var(--clr-primary-T1);
-}
-.unsortedTable td {
-    background-color: var(--clr-secondary-T1);
-    text-align: center;
-}
-.sortedTable th {
-    background-color: var(--clr-primary-T2);
-}
-.sortedTable td {
-    background-color: var(--clr-secondary-T2);
-    text-align: center;
 }
