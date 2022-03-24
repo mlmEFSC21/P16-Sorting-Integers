@@ -1,4 +1,4 @@
-# P15-Sorting-Integers
+# P16-Sorting-Integers
 Module 10 Class Activity 2 (Sorting Integers)
 Use JavaScript in an html file to perform the following:
 
