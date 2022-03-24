@@ -14,7 +14,7 @@
 }
 body {
     font-size: 0.875;
-    text-shadow: 1.75px 1.75px 3px white;
+    text-shadow: 1px 1px 3px white;
     background-color: var(--clr-background);
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,9 +1,9 @@
 :root {
     --clr-background: #00ff8f;
     --clr-primary-T1: hsl(184, 100%, 50%);
-    --clr-primary-T2: hsl(245, 61%, 26%);
+    --clr-primary-T2: hsl(220, 61%, 26%);
     --clr-secondary-T1: hsl(124, 100%, 50%);
-    --clr-secondary-T2: hsl(166, 90%, 35%);
+    --clr-secondary-T2: hsl(166, 84%, 32%);
 }
 *,
 *::after,
@@ -14,7 +14,7 @@
 }
 body {
     font-size: 0.875;
-    text-shadow: 1.75px 1.75px 3px white;
+    text-shadow: 0.75px 0.75px 1px white;
     background-color: var(--clr-background);
     background-repeat: no-repeat;
     background-size: cover;

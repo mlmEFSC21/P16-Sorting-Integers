@@ -1,9 +1,9 @@
 :root {
     --clr-background: #00ff8f;
     --clr-primary-T1: hsl(184, 100%, 50%);
-    --clr-primary-T2: hsl(245, 61%, 26%);
+    --clr-primary-T2: hsl(184, 90%, 55%);
     --clr-secondary-T1: hsl(124, 100%, 50%);
-    --clr-secondary-T2: hsl(166, 90%, 35%);
+    --clr-secondary-T2: hsl(124, 100%, 50%);
 }
 *,
 *::after,
@@ -14,7 +14,7 @@
 }
 body {
     font-size: 0.875;
-    text-shadow: 1.75px 1.75px 3px white;
+    text-shadow: 0.75px 0.75px 1px white;
     background-color: var(--clr-background);
     background-repeat: no-repeat;
     background-size: cover;
@@ -53,8 +53,8 @@ th {
 }
 th,
 td {
-    margin: 10px 15px;
-    padding: 20px 25px;
+    margin: 20px 25px;
+    padding: 20px 15px;
 }
 .unsortedTable th {
     background-color: var(--clr-primary-T1);
@@ -62,10 +62,6 @@ td {
 .unsortedTable td {
     background-color: var(--clr-secondary-T1);
     text-align: center;
-}
-.sortedTable {
-    color: white;
-    text-shadow: 1.75px 1.75px 5px black;
 }
 .sortedTable th {
     background-color: var(--clr-primary-T2);
