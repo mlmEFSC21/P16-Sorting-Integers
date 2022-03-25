@@ -20,9 +20,9 @@ body {
     background-size: cover;
     background: linear-gradient(
         135deg,
-        rgba(26, 39, 107, 1) 25%,
-        rgba(0, 255, 128, 1) 50%,
-        rgba(0, 212, 255, 1) 100%
+        rgba(26, 39, 107, 1) 0%,
+        rgba(0, 255, 128, 1) 25%,
+        rgba(0, 212, 255, 1) 75%
     );
     height: 100vh;
 }

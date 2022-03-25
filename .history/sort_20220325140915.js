@@ -1,26 +1,18 @@
 //hardcoded array to create logic for the sort.
 const unsortedArray = [];
 const sortedArray = unsortedArray.sort((a, b) => a - b);
-const arrayContainer = document.querySelector("#arrayContainer");
+const arrayContainer = document.getElementById("arrayContainer");
 const unsortedTable = document.createElement("table");
-unsortedTable.setAttribute("class", "unsortedTable");
+unsortedTable.className("unsortedTable");
 arrayContainer.append(unsortedTable);
-const unsortedCaption = document.createElement("caption");
-unsortedCaption.innerText = "Unsorted Array Table";
-unsortedTable.append(unsortedCaption);
 
 const sortedTable = document.createElement("table");
-sortedTable.setAttribute("class", "sortedTable");
-arrayContainer.append(sortedTable);
-const sortedCaption = document.createElement("caption");
-sortedCaption.innerText = "Sorted Array Table";
-sortedTable.append(sortedCaption);
 
-// let i = 0;
-// while (i < 5) {
-//     unsortedArray[i] = parseInt(prompt("Please enter an integer."));
-//     i++;
-// }
+let i = 0;
+while (i < 5) {
+    unsortedArray[i] = parseInt(prompt("Please enter an integer."));
+    i++;
+}
 
 console.log(unsortedArray);
 console.log(sortedArray);
