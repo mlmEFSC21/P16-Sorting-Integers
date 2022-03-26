@@ -1,9 +1,6 @@
 const unsortedArray = [];
-let i = 0;
-while (i < 5) {
-    unsortedArray[i] = parseInt(prompt("Please enter an integer."));
-    i++;
-}
+//arrow function to sort the unsorted array.
+const sortedArray = unsortedArray.sort((a, b) => a - b);
 const arrayContainer = document.querySelector("#arrayContainer");
 //create the unsorted table
 const unsortedTable = document.createElement("table");
@@ -13,7 +10,7 @@ unsortedTable.setAttribute("id", "unsortedTable");
 const sortedTable = document.createElement("table");
 sortedTable.setAttribute("class", "sortedTable");
 sortedTable.setAttribute("id", "sortedTable");
-//fill the table with other elements using template literals
+//fill the table with other elements
 unsortedTable.innerHTML = `
 <caption>
 Unsorted Array Table
@@ -37,9 +34,7 @@ Unsorted Array Table
 </tr>
 </tbody>`;
 arrayContainer.append(unsortedTable);
-//arrow function to sort the unsorted array.
-const sortedArray = unsortedArray.sort((a, b) => a - b);
-//fill the table with other elements using template literals
+//fill the table with other elements
 sortedTable.innerHTML = `
 <caption>
 Sorted Array Table
@@ -61,6 +56,12 @@ Sorted Array Table
 </tr>
 </tbody>`;
 arrayContainer.append(sortedTable);
+
+let i = 0;
+while (i < 5) {
+    unsortedArray[i] = parseInt(prompt("Please enter an integer."));
+    i++;
+}
 
 console.log(unsortedArray);
 console.log(sortedArray);

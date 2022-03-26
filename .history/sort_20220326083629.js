@@ -1,9 +1,6 @@
 const unsortedArray = [];
-let i = 0;
-while (i < 5) {
-    unsortedArray[i] = parseInt(prompt("Please enter an integer."));
-    i++;
-}
+//arrow function to sort the unsorted array.
+const sortedArray = unsortedArray.sort((a, b) => a - b);
 const arrayContainer = document.querySelector("#arrayContainer");
 //create the unsorted table
 const unsortedTable = document.createElement("table");
@@ -13,7 +10,7 @@ unsortedTable.setAttribute("id", "unsortedTable");
 const sortedTable = document.createElement("table");
 sortedTable.setAttribute("class", "sortedTable");
 sortedTable.setAttribute("id", "sortedTable");
-//fill the table with other elements using template literals
+//fill the table with other elements
 unsortedTable.innerHTML = `
 <caption>
 Unsorted Array Table
@@ -29,17 +26,15 @@ Unsorted Array Table
 </thead>
 <tbody>
 <tr>
-<td>${unsortedArray[0]}</td>
-<td>${unsortedArray[1]}</td>
-<td>${unsortedArray[2]}</td>
-<td>${unsortedArray[3]}</td>
-<td>${unsortedArray[4]}</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>`;
 arrayContainer.append(unsortedTable);
-//arrow function to sort the unsorted array.
-const sortedArray = unsortedArray.sort((a, b) => a - b);
-//fill the table with other elements using template literals
+//fill the table with other elements
 sortedTable.innerHTML = `
 <caption>
 Sorted Array Table
@@ -53,22 +48,27 @@ Sorted Array Table
 </thead>
 <tbody>
 <tr>
-<td>${sortedArray[0]}</td>
-<td>${sortedArray[1]}</td>
-<td>${sortedArray[2]}</td>
-<td>${sortedArray[3]}</td>
-<td>${sortedArray[4]}</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>`;
 arrayContainer.append(sortedTable);
 
+// let i = 0;
+// while (i < 5) {
+//     unsortedArray[i] = parseInt(prompt("Please enter an integer."));
+//     i++;
+// }
+
 console.log(unsortedArray);
 console.log(sortedArray);
 
-// prettier-ignore;
-// document.getElementById(
-//     "unsorted"
-// ).innerText = `${unsortedArray[0]} ${unsortedArray[1]} ${unsortedArray[2]} ${unsortedArray[3]} ${unsortedArray[4]} `;
+// prettier-ignore
+// document.getElementById("unsorted").innerText =
+// `${unsortedArray[0]} ${unsortedArray[1]} ${unsortedArray[2]} ${unsortedArray[3]} ${unsortedArray[4]} `;
 
 // // prettier-ignore
 // document.getElementById("sorted").innerText =
