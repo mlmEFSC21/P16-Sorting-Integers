@@ -12,8 +12,11 @@ const thead = document.createElement("thead");
 unsortedTable.append(thead);
 const unsortHeadRow = document.createElement("tr");
 thead.append(unsortHeadRow);
-let dataCell;
+const unsortHeadData = document.createElement("td");
 let i = 0;
+while (i < 5) {
+    unsortHeadData;
+}
 
 const sortedTable = document.createElement("table");
 sortedTable.setAttribute("class", "sortedTable");

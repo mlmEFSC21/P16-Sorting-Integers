@@ -13,7 +13,10 @@ unsortedTable.append(thead);
 const unsortHeadRow = document.createElement("tr");
 thead.append(unsortHeadRow);
 let dataCell;
-let i = 0;
+
+unsortHeadRow.append(document.createElement("td").setAttribute("class", `index${i}`));
+dataCell = document.querySelector(`.index${i}`);
+dataCell.innerText = `Index ${i}`;
 
 const sortedTable = document.createElement("table");
 sortedTable.setAttribute("class", "sortedTable");

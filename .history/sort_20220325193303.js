@@ -10,10 +10,8 @@ unsortedCaption.innerText = "Unsorted Array Table";
 unsortedTable.append(unsortedCaption);
 const thead = document.createElement("thead");
 unsortedTable.append(thead);
-const unsortHeadRow = document.createElement("tr");
-thead.append(unsortHeadRow);
-let dataCell;
-let i = 0;
+const unsortedHeadRow = document.createElement("tr");
+unsortedTable.append(unsortedHeadRow);
 
 const sortedTable = document.createElement("table");
 sortedTable.setAttribute("class", "sortedTable");
