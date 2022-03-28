@@ -1,11 +1,5 @@
 const unsortedArray = [];
 const form = document.querySelector("#inputForm");
-form.addEventListener("submit", getNumber);
-function getNumber() {
-    let inputNum = document.querySelector("#numInp");
-    unsortedArray.push(inputNum.value);
-}
-
 const arrayContainer = document.querySelector("#arrayContainer");
 //create the unsorted table
 const unsortedTable = document.createElement("table");

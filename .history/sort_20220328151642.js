@@ -5,7 +5,8 @@ function getNumber() {
     let inputNum = document.querySelector("#numInp");
     unsortedArray.push(inputNum.value);
 }
-
+let i = 0;
+while (i < 5) {}
 const arrayContainer = document.querySelector("#arrayContainer");
 //create the unsorted table
 const unsortedTable = document.createElement("table");
