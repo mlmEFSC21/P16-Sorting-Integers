@@ -60,13 +60,12 @@ button {
 button:hover {
     background-color: var(--clr-primary-T1);
     color: var(--clr-secondary-T1);
-    transform: translate(2px, 2px);
 }
 table {
     border-collapse: collapse;
     font-size: 1.5rem;
     border: 2px solid black;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 3px 3px 10px black;
 }
 caption {
     font-size: 2rem;

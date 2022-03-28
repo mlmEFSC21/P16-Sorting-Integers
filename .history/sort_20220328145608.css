@@ -60,7 +60,7 @@ button {
 button:hover {
     background-color: var(--clr-primary-T1);
     color: var(--clr-secondary-T1);
-    transform: translate(2px, 2px);
+    transform: translate(3px, 3px);
 }
 table {
     border-collapse: collapse;
