@@ -6,7 +6,7 @@ function getNumber(e) {
     e.preventDefault();
     unsortedArray.push(inputNum.value);
     createUnsortedTable();
-    if (unsortedArray.length >= 5) {
+    if (unsortedArray.length() >= 5) {
         createSortedTable();
     }
     inputNum.value = "";
@@ -74,6 +74,6 @@ Sorted Array Table
 </tbody>`;
 
     arrayContainer.append(sortedTable);
-    console.log(sortedArray);
 }
 console.log(unsortedArray);
+console.log(sortedArray);

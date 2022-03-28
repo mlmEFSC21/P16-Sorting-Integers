@@ -5,11 +5,6 @@ form.addEventListener("submit", getNumber);
 function getNumber(e) {
     e.preventDefault();
     unsortedArray.push(inputNum.value);
-    createUnsortedTable();
-    if (unsortedArray.length >= 5) {
-        createSortedTable();
-    }
-    inputNum.value = "";
 }
 
 const arrayContainer = document.querySelector("#arrayContainer");
@@ -21,9 +16,8 @@ unsortedTable.setAttribute("id", "unsortedTable");
 const sortedTable = document.createElement("table");
 sortedTable.setAttribute("class", "sortedTable");
 sortedTable.setAttribute("id", "sortedTable");
-function createUnsortedTable() {
-    //fill the table with other elements using template literals
-    unsortedTable.innerHTML = `
+//fill the table with other elements using template literals
+unsortedTable.innerHTML = `
 <caption>
 Unsorted Array Table
 </caption>
@@ -45,14 +39,11 @@ Unsorted Array Table
 <td>${unsortedArray[4]}</td>
 </tr>
 </tbody>`;
-    arrayContainer.append(unsortedTable);
-}
+arrayContainer.append(unsortedTable);
 //arrow function to sort the unsorted array.
-// const sortedArray = unsortedArray.sort((a, b) => a - b);
-function createSortedTable() {
-    const sortedArray = unsortedArray.sort((a, b) => a - b);
-    //fill the table with other elements using template literals
-    sortedTable.innerHTML = `
+const sortedArray = unsortedArray.sort((a, b) => a - b);
+//fill the table with other elements using template literals
+sortedTable.innerHTML = `
 <caption>
 Sorted Array Table
 </caption>
@@ -72,8 +63,16 @@ Sorted Array Table
 <td>${sortedArray[4]}</td>
 </tr>
 </tbody>`;
+arrayContainer.append(sortedTable);
 
-    arrayContainer.append(sortedTable);
-    console.log(sortedArray);
-}
 console.log(unsortedArray);
+console.log(sortedArray);
+
+// prettier-ignore;
+// document.getElementById(
+//     "unsorted"
+// ).innerText = `${unsortedArray[0]} ${unsortedArray[1]} ${unsortedArray[2]} ${unsortedArray[3]} ${unsortedArray[4]} `;
+
+// // prettier-ignore
+// document.getElementById("sorted").innerText =
+// `${sortedArray[0]} ${sortedArray[1]} ${sortedArray[2]} ${sortedArray[3]} ${sortedArray[4]} `;

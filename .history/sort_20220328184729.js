@@ -6,9 +6,8 @@ function getNumber(e) {
     e.preventDefault();
     unsortedArray.push(inputNum.value);
     createUnsortedTable();
-    if (unsortedArray.length >= 5) {
-        createSortedTable();
-    }
+    const sortedArray = unsortedArray.sort((a, b) => a - b);
+    createSortedTable();
     inputNum.value = "";
 }
 
@@ -50,7 +49,6 @@ Unsorted Array Table
 //arrow function to sort the unsorted array.
 // const sortedArray = unsortedArray.sort((a, b) => a - b);
 function createSortedTable() {
-    const sortedArray = unsortedArray.sort((a, b) => a - b);
     //fill the table with other elements using template literals
     sortedTable.innerHTML = `
 <caption>
@@ -74,6 +72,15 @@ Sorted Array Table
 </tbody>`;
 
     arrayContainer.append(sortedTable);
-    console.log(sortedArray);
 }
 console.log(unsortedArray);
+console.log(sortedArray);
+
+// prettier-ignore;
+// document.getElementById(
+//     "unsorted"
+// ).innerText = `${unsortedArray[0]} ${unsortedArray[1]} ${unsortedArray[2]} ${unsortedArray[3]} ${unsortedArray[4]} `;
+
+// // prettier-ignore
+// document.getElementById("sorted").innerText =
+// `${sortedArray[0]} ${sortedArray[1]} ${sortedArray[2]} ${sortedArray[3]} ${sortedArray[4]} `;
